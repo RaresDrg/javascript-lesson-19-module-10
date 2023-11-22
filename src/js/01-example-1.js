@@ -21,9 +21,10 @@ function loadData(searchTerm) {
   API.getNews(searchTerm)
     .then(data => {
       const { articles } = data;
-
       if (articles?.length === 0) {
         hideElement(loadingEL);
+        showElement(articlesList);
+        updateArticlesList('<h3>Articles not found</h3>');
         throw new Error('No data');
       }
 
