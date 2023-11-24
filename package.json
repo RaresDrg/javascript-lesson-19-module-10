@@ -1,11 +1,11 @@
 {
-  "name": "javascript-lesson-18-module-9",
+  "name": "javascript-lesson-19-module-10",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/RaresDrg/javascript-lesson-18-module-9.git",
+  "homepage": "https://github.com/RaresDrg/javascript-lesson-19-module-10.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /javascript-lesson-18-module-9/"
+    "build": "parcel build src/*.html --public-url /javascript-lesson-19-module-10/"
   },
   "repository": {
     "type": "git",
