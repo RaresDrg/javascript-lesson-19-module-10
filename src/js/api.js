@@ -1,10 +1,10 @@
 const ENDPOINT = 'https://newsapi.org/v2/everything';
-const KEY_API = 'c16730bd019e47b49168e3f2670f55aa';
+const KEY_API = '1bfb956be4624deab8ea82acf099560b';
 
 function getNews(query) {
-  return fetch(`${ENDPOINT}?apiKey=${KEY_API}&q=${query}`).then(response =>
-    response.json()
-  );
+  const url = `${ENDPOINT}?apiKey=${KEY_API}&q=${query}`;
+
+  return fetch(url).then(response => response.json());
 }
 
 export default { getNews };

@@ -6,7 +6,9 @@ const loadingEL = document.getElementById('loading');
 
 form.addEventListener('submit', event => {
   event.preventDefault();
+
   const inputValue = form.elements.news.value.trim();
+
   if (inputValue === '') {
     alert('Please, write something');
     return;
@@ -21,6 +23,7 @@ function loadData(searchTerm) {
   API.getNews(searchTerm)
     .then(data => {
       const { articles } = data;
+
       if (articles?.length === 0) {
         hideElement(loadingEL);
         showElement(articlesList);
